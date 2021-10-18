@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            .head{
+               
+               
+                width:100%;
+               
+
+            }
+            
+            #navbar{
+                word-spacing: 20px;
+                font-size: 20px;
+                
+            }
+            #logo{
+                background-color: white;
+                width:130px;
+                float:right;
+                position:relative;
+                right:22px;
+                top:20px;
+            }
+            #TAP{
+                word-spacing: 2px;
+
+            }
+            .rankings{
+               
+               float:left;
+                margin:30px;
+                padding:30px;
+            }
+            #week{
+                margin:10px;
+                font-weight:900;
+                color:black;
+                padding:10px;
+                border:5px solid black;
+                width:500px;
+                height:200px;
+            }
+            #navbar a{
+                
+                text-decoration: none;
+                color:rgb(253, 252, 252);
+                
+                
+            }
+            #inner{
+                text-align: center;
+            }
+            
+            
+            #navbar a:hover{
+                text-decoration: underline;
+                background-color: #ddd;
+                color: black;
+            }
+
+            .ranks{
+                font-size: 2em;
+                color:maroon;
+            }
+            #ranks {
+                font-size:1.5em;
+                 background-color: #000;
+                 color: #fff;
+                padding: 3px 6px;
+}
+            h1{
+                text-align: center;
+                float:center;
+            }
+            .social{
+                width:50px;
+                height:50px;
+            }
+            hr{
+                border-top: 2px solid rgb(255, 21, 0);
+            }
+            #navbar a:active {
+                background-color: #04AA6D;
+                color: white;
+}
+            #sociali{
+                float:left;
+                margin:20px 8px 8px 20px;
+            }
+            header{
+                background-color: rgb(7,26,37);
+                color:rgb(250, 249, 249);
+                
+            }
+            #week img{
+                width:200px;
+                height:100px;
+            }
+            .rankings p{
+                float:left;
+                font-size: 1.5em;
+                
+            }
+            #notifications{
+                float:right;
+                border:2px solid rgb(7,26,37) ;
+                width:500px;
+                height:1040px;
+                margin:50px;
+                
+
+            }
+            .sticky {
+                position: fixed;
+                 top: 0;
+                 width: 100%;
+                 z-index:3;
+                 background-color: rgb(7,26,37);
+                  
+}
+
+
+            #notifications h2{
+                color:white;
+                background-color: black;
+            }
+            #navbar{
+                clear:left;
+                height:25px;
+                
+            }
+            #video h1{
+                clear:left;
+            }
+            #video{
+                margin:30px;
+                padding:30px;
+                font-size:20px;
+                
+            }
+            #video>fieldset{
+                width:1200px;
+            }
+            video{
+                float:left;
+                margin-right:30px;
+            }
+            #address,#number,#mail{
+                float:left;
+                margin-right:30px;
+                border:3px solid black;
+                width:210px;
+                height:230px;
+                background-color: lightblue;
+                color:black;
+            }
+           
+            #vision,#mission{
+                background-color: rgb(7,26,37);
+                color:white;
+                font-size:22px;
+                height:34px;
+            }
+            #welcome fieldset{
+                border-top:3px solid rgb(7, 26, 37);
+                border-left:3px solid rgb(7, 26, 37);
+                border-right:3px solid rgb(7, 26, 37);
+                border-bottom:3px solid rgb(255, 21, 0) ;
+                background-color:lightblue;
+                position:relative;
+                width:1300px;
+            }
+            
+            #foot{
+                float:center;
+                
+                
+            }
+            #footfield{
+                background-color: rgb(7,26,37);
+            }
+            
+            #details{
+                color:white;
+               
+            }
+            
+            .dropbtn {
+                color: white;
+                background-color: rgb(7,26,37);
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                font-family: inherit;
+}
+
+            .dropbtn:hover, .dropbtn:focus {
+                  background-color: #3e8e41;
+            }
+
+            .dropdown {
+ 
+                     display: inline-block;
+            }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color:whitesmoke;
+  background-color: rgb(7, 26, 37);
+  max-width: 160px;
+  padding:10px 5px 10px 5px;
+ 
+  overflow: auto;
+  word-spacing:8px;
+  border-left:3px solid rgb(255, 21, 0) ;
+  border-right:3px solid rgb(255, 21, 0) ;
+  border-bottom:3px solid rgb(255, 21, 0) ;
+ 
+  
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:rgb(7, 26, 37);
+  height:20px;
+  
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+@media screen and (max-width:600px){
+    .head{
+        width:100%;
+    }
+    #navbar{
+                word-spacing: 10px;
+                font-size: 10px;
+                
+            }
+            #logo{
+                background-color: white;
+                width:65px;
+                float:right;
+                position:relative;
+                right:11px;
+                top:10px;
+            }
+            header{
+                width:600px;
+            }
+
+}
+            
+        </style>
+    </head>
+    <body>
+        <div class = "head">
+            <header>
+            
+            <img id="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/75/National_Institute_of_Technology%2C_Kurukshetra_Logo.png/220px-National_Institute_of_Technology%2C_Kurukshetra_Logo.png">
+            <img>
+           
+            <h1 >
+                National Institute Of Technology Kurukshetra
+            </h1>
+            
+            <nav id="navbar">
+                <nav id="inner">
+                <a href='home.html'>Home</a>
+                <a href='#'>Academics</a>
+                <a href='#'>Departments</a>
+                <a href='Faculty.html'>Faculty</a>
+                <div class="dropdown">
+                    <button onclick="mFunction()" class="dropbtn">Training And Placement</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Placement_team_15.07.2020 28082020.pdf">Placement Team</a>
+                                
+                                <a href="Website Update _ Invitation.16.07.2020 (2).pdf">Invitation</a>
+                                
+                                <a href="Training & Placement Brochure 2020_21 18082020_compressed 18082020.pdf">TNP Brochure</a>
+                                
+                                <a href="Major Recruiters 25022021.pdf">Major Recruiters</a>
+                                
+                                <a href="Placement Stats Academic Session 2019-20 22102020.pdf">Placement Statistics Recent</a>
+                                
+                                <a href="PLACEMENT_PROTOCOL_1.pdf">Placement Protocol</a>
+                                
+                                <a href="T&P_Cell_Guidelines.pdf">General Instruction</a>
+                                
+                                <a href="Reach Us.pdf">Reach Us</a>
+                                
+                    </div>
+                  </div>
+                  
+                <a href='#'>Hostel</a>
+                <a href="sportstry.html">Sports</a>
+            </nav>
+            </nav>
+            <hr>
+        </header>
+            <div id="welcome">
+              <fieldset id="welcomefield">
+              <legend><h1> WELCOME TO NIT Kurukshetra</h1></legend> 
+                <p>Every faculty, staff and student of NIT Kurukshetra is passionately committed to the mission of making India a world leader in technology and science, and nurtures this commitment with honesty, hard work and team spirit.</p>
+                <h2 id="vision">Our Vision</h2>
+                <p>To become an internationally acclaimed institution of higher learning that will serve as a source of knowledge and expertise for the society and be a preferred destination for undergraduate and graduate studies.
+                </p>
+                <h2 id="mission">Our Mission</h2>
+                <p>To advance and spread knowledge in the area of science and technology leading to creation of wealth and welfare of humanity.</p>
+
+             </fieldset>
+            </div>
+           
+            
+            <div class ="rankings" >
+                <fieldset>
+                <legend id="ranks">NITKKR RANKINGS</legend>
+                <div id="week">
+                    <p>The Week 2020 <br>
+                         ranking for engineering </p>
+                         
+                         <img src="https://fontlot.com/wp-content/uploads/2020/07/theweeksmallforsite-feature.jpg"></img><p><span class="ranks">RANK: 27</span></p>
+                </div>
+                <div id="week">
+                    <p>The NIRF 2020 <br>
+                         ranking for engineering </p>
+                         <img src="https://www.nirfindia.org/images/main-logo.png"></img>
+                         <p><span class="ranks">RANK: 40</span></p>
+                </div>
+                <div id="week">
+                    <p>The NIRF 2020 <br>
+                         ranking for Engineering </p>
+                         <img src="https://www.nirfindia.org/images/main-logo.png"></img>
+                         <p><span class="ranks">RANK: 40</span></p>
+                </div>
+                <div id="week">
+                    <p>The NIRF 2020 <br>
+                         ranking among NITs </p>
+                         <img src="https://fontlot.com/wp-content/uploads/2020/07/theweeksmallforsite-feature.jpg"></img>
+                         <p><span class="ranks">RANK: 27</span></p>
+                </div>
+            </fieldset>
+                
+            </div>
+            <div id="notifications">
+               <h2 align="center"><b>Notifications</b></h2>
+               <div class="bg-white">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				
+			                    	<p class="mb-0"><a href="PR. Schedule B.Tech. First year MED-21-1093 "></a></p><p><a href="https://nitkkr.ac.in/docs/PR. Schedule B.Tech. First year MED-21-1093 16062021.pdf">PR. Schedule B.Tech. First year MED-21-1093</a></p>
+<p></p>
+					
+						                    	<p class="mb-0"><a href="Notification dated 15.06.2021 regarding closure of Institute till further orders"></a></p><p><a href="https://nitkkr.ac.in/docs/Notification dt.15.06.2021 16062021.pdf">Notification dated 15.06.2021 regarding closure of Institute till further orders</a></p>
+<p></p>
+					
+						                    	<p class="mb-0"><a href="End Sem Practical Examination Schedule MED-21-1094 "></a></p><p><a href="https://nitkkr.ac.in/docs/End Sem Practical Examination Schedule MED-21-1094 16062021.pdf">End Sem Practical Examination Schedule MED-21-1094</a></p>
+<p></p>
+					
+						                    	<p class="mb-0"><a href="Detained List of Practical End Semester Examinations June 2021 [B.Tech 2nd Semester] "></a></p><p><a href="https://nitkkr.ac.in/docs/Detained List of Practical End Semester Examinations June 2021 [B.Tech 2nd Semester] 14062021.PDF">Detained List of Practical End Semester Examinations June 2021 [B.Tech 2nd Semester]</a></p>
+<p></p>
+					
+						                    	<p class="mb-0"><a href="Second merit List MBA Admission 2021-23"></a></p><p><a href="https://nitkkr.ac.in/docs/Second%20merit%20List%20MBA%20Admission%202021-23%2014062021.pdf">Second merit List MBA Admission 2021-23</a></p>
+<p></p>
+						
+						                    	<p class="mb-0"><a href="First merit List MBA Admission 2021-23"></a></p><p><a href="https://nitkkr.ac.in/docs/First merit List MBA Admission 2021-23 08062021.pdf">First merit List MBA Admission 2021-23</a></p>
+<p></p>
+						
+						                    	<p class="mb-0"><a href="Provisional Re-Appear cut list of Internal &amp; External Re-Appear Examinations (MayJune-2021) [Phase-XIII] "></a></p><p><a href="https://nitkkr.ac.in/docs/Provisional Re-Appear cut list of Internal &amp; External Re-Appear Examinations (MayJune-2021) [Phase-XIII] 08062021.pdf">Provisional Re-Appear cut list of Internal &amp; External Re-Appear Examinations (MayJune-2021) [Phase-XIII]</a></p>
+<p></p>
+						
+						                    	<p class="mb-0"><a href="MAKE UP TEST SCHEDULE FOR B.TECH. 2nd SEMESTER 2020-21 (NEW SCHEME) ELECTRICAL"></a></p><p><a href="https://nitkkr.ac.in/docs/MAKE UP TEST SCHEDULE FOR B.TECH. 2nd SEMESTER 2020-21 (NEW SCHEME) ELECTRICAL 08062021.pdf">MAKE UP TEST SCHEDULE FOR B.TECH. 2nd SEMESTER 2020-21 (NEW SCHEME) ELECTRICAL</a></p>
+<p></p>
+						
+						                    	<p class="mb-0"><a href="Notification and time slots for Mid Semester Exam-II of MCA 2nd Semester for MayJune-2020-21"></a></p><p><a href="https://nitkkr.ac.in/docs/Notification and time slots for Mid Semester Exam-II of MCA 2nd Semester for MayJune-2020-21 04062021.PDF">Notification and time slots for Mid Semester Exam-II of MCA 2nd Semester for MayJune-2020-21</a></p>
+<p></p>
+						
+						                    	<p class="mb-0"><a href="MBA Admissions 2021 List of Eligible Candidate for Online Interviews"></a></p><p><a href="https://nitkkr.ac.in/docs/MBA Admissions 2021 List of Eligible Candidate for Online Interviews Updated 04062021.pdf">MBA Admissions 2021 List of Eligible Candidate for Online Interviews</a>(re-uploaded)</p>
+<p></p>
+						
+						                    	<p class="mb-0"><a href="Final Allotment of Open Elective (OE) course in 7th semester of B.Tech Programs AY 2021-22 "></a></p><p><a href="https://nitkkr.ac.in/docs/Final Allotment of Open Elective (OE) course in 7th semester of B.Tech Programs AY 2021-22 03062021.pdf">Final Allotment of Open Elective (OE) course in 7th semester of B.Tech Programs AY 2021-22</a></p>
+<p></p>
+						
+						                    	<p class="mb-0"><a href="Date Sheet for Theory Examinations of B.Tech. 1st Year for June-2021"></a></p><p><a href="https://nitkkr.ac.in/docs/Date Sheet for Theory Examinations of B.Tech. 1st Year for June-2021 03062021.pdf">Date Sheet for Theory Examinations of B.Tech. 1st Year for June-2021</a></p>
+<p></p>
+						
+						                    	
+									
+			</div>
+            </div>
+               
+            
+        </div>
+        <div id="video">
+            <fieldset>
+                <legend>
+                    <h1 align="center">CAMPUS TOUR</h1>
+                </legend>
+                <video src="video.mp4" controls autoplay muted width="500">
+                </video>
+                <p>The campus extends over an area of 300 acres imaginatively laid down on a picturesque landscape. It presents a spectacle of harmony in architecture and natural beauty. The campus has been organised into three functional sectors:</p> 
+
+                    <p>  Hostels for the students,<br>
+                    
+                Instructional buildings and Residential sector for the staff.</p> 
+                    
+                   <p> Hostels for students are located towards Eastern side of the campus in the form of cluster. Three storey buildings of hostels provide comfortable accommodation and pleasing environment to students.</p>
+                    
+                   <p>The instructional buildings have been located between the two residential sectors in order to reduce walking distance. A full fledged health centre manned by qualified doctors, a Post Office and a branch of the State Bank of India are located at convenient points on the Campus.</p>
+            </fieldset>
+        </div>
+        <div id="footer">
+            <fieldset id="footfield">
+            
+            <legend align="center" id="footleg"><div id="foot">
+                <div id="address">
+                    <img src="https://image.flaticon.com/icons/png/512/67/67872.png" width="40px" height="40px">
+                    <h1>Address</h1>
+                    <p>National Institute of Technology<br>
+                        Kurukshetra-136119<br>
+                        Haryana, INDIA
+                    </p>
+                    
+                </div>
+                <div id="number">
+                    <img src="https://i.pinimg.com/originals/ab/8e/8d/ab8e8d3f8aab71818795ce2db4891c64.png" width="40px" height="40px">
+                    </img>
+                    <h1>Phone number</h1>
+                    <p>01744-233208<br>
+                        01744-233227
+                    </p>
+                </div>
+                <div id="mail">
+                    <img src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-512.png" width="40px" height="40px">
+                    </img>
+                    <h1>Email Address</h1>
+                    <p>registrar@nitkkr.ac.in<br>
+                        academic@nitkkr.ac.in
+                    </p>
+                </div>
+               
+            </div></legend>
+            <div id="sociali">
+                <a href="https://twitter.com/nitkurukshetra"><img class="social" src="https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-logo-2012.png"></img>
+                </a>
+                
+                <a href="https://www.facebook.com/nitkurukshetraofficialpage/"><img class="social" src="https://www.facebook.com/images/fb_icon_325x325.png"></img>
+                 </a>                 
+                <a href="https://www.instagram.com/nitkurukshetra/?hl=en"><img class="social" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"></img>
+                 </a>
+            </div>
+            <div id="details">
+                <h2 align="center">Copyright © 2016 All Rights Reserved. NIT Kurukshetra | Designed and developed by Tushar</h2>
+            </div>
+        </fieldset>
+        
+            
+           
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function mFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+            </script>
+
+            
+    </body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .header{
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(sports.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            
+        }
+
+        .hostel{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+        }
+
+        .hostel h1{
+            font-size: 62px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .hostel p{
+            margin:10px;
+            font-size: 22px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .about-hostel{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .about-hostel h1{
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .about-hostel p{
+            color: black;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+            line-height: 1.4;
+
+        }
+
+
+        /*the-hostel*/
+
+        .the-hostel{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .the-hostel h1{
+            font-size: 36px;
+            font-weight: 600;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .the-hostel p{
+            color: black;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 26px;
+            padding: 10px;
+
+        }
+
+        .hostel-name{
+            margin-top: 5%;
+            display: flex; 
+            justify-content: space-around;
+        }  
+
+        /*girls hostel*/
+
+
+        .hostel-name h3{
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        /* .name:hover{
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+        } */
+
+
+        /* gallery */
+
+        .gallery{
+            flex-basis: 31%;
+            background: #fff3f3;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            border-radius: border-box;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        } 
+
+        div.gallery:hover {
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallery-pool{
+            flex-basis: 3%;
+            background: #fff3f3;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            border-radius: border-box;
+        }
+
+        div.gallery-pool img {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 0.5rem;
+        }
+
+        .gallery-pool .desc{
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .hostel-name-pool{
+            margin-top: 5%;
+            display: flex; 
+            justify-content: space-around;
+        }
+
+
+        /*learn more*/
+
+        .hostel-link{
+            padding:.7rem 3rem;
+            font-size: 1rem;
+            color:#fff;
+            background:var(--gradient);
+            border-radius: 5rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            box-shadow: 0 .1rem .3rem rgba(0,0,0,0);
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }  
+
+        .btn{
+            padding:.4rem 2rem;
+            font-size: 1rem;
+            color:rgb(0, 0, 0);
+            background: #fff3f3;
+            border-radius:5rem;
+            border-color: #fff3f3;
+            margin-top: 1rem;
+            cursor: pointer;
+            box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .btn:hover{
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+        }
+
+        
+
+             .head{
+               
+               
+                width:100%;
+                background-size: cover;
+                background-repeat:no-repeat;
+
+            }
+            
+            #navbar{
+                word-spacing: 20px;
+                font-size: 20px;
+                
+            }
+            #logo{
+                background-color: white;
+                width:130px;
+                float:right;
+                position:relative;
+                right:22px;
+                top:20px;
+            }
+            #TAP{
+                word-spacing: 2px;
+
+            }
+            .rankings{
+               
+               float:left;
+                margin:30px;
+                padding:30px;
+            }
+            #week{
+                margin:10px;
+                font-weight:900;
+                color:black;
+                padding:10px;
+                border:5px solid black;
+                width:500px;
+                height:200px;
+            }
+            #navbar a{
+                
+                text-decoration: none;
+                color:rgb(253, 252, 252);
+                
+                
+            }
+            #inner{
+                text-align: center;
+            }
+            
+            
+            #navbar a:hover{
+                text-decoration: underline;
+                background-color: #ddd;
+                color: black;
+            }
+
+            .ranks{
+                font-size: 2em;
+                color:maroon;
+            }
+            #ranks {
+                font-size:1.5em;
+                 background-color: #000;
+                 color: #fff;
+                padding: 3px 6px;
+}
+            h1{
+                text-align: center;
+                float:center;
+            }
+            .social{
+                width:50px;
+                height:50px;
+            }
+            hr{
+                border-top: 2px solid rgb(255, 21, 0);
+            }
+            #navbar a:active {
+                background-color: #04AA6D;
+                color: white;
+}
+            #sociali{
+                float:left;
+                margin:20px 8px 8px 20px;
+            }
+            header{
+                background-color: rgb(7,26,37);
+                color:rgb(250, 249, 249);
+                
+            }
+            #week img{
+                width:200px;
+                height:100px;
+            }
+            .rankings p{
+                float:left;
+                font-size: 1.5em;
+                
+            }
+            #notifications{
+                float:right;
+                border:2px solid rgb(7,26,37) ;
+                width:500px;
+                height:1040px;
+                margin:50px;
+                
+
+            }
+            .sticky {
+                position: fixed;
+                 top: 0;
+                 width: 100%;
+                 z-index:3;
+                 background-color: rgb(7,26,37);
+                  
+}
+
+
+            #notifications h2{
+                color:white;
+                background-color: black;
+            }
+            #navbar{
+                clear:left;
+                height:25px;
+                
+            }
+            #video h1{
+                clear:left;
+            }
+            #video{
+                margin:30px;
+                padding:30px;
+                font-size:20px;
+                
+            }
+            #video>fieldset{
+                width:1200px;
+            }
+            video{
+                float:left;
+                margin-right:30px;
+            }
+            #address,#number,#mail{
+                float:left;
+                margin-right:30px;
+                border:3px solid black;
+                width:210px;
+                height:230px;
+                background-color: lightblue;
+                color:black;
+            }
+           
+            #vision,#mission{
+                background-color: rgb(7,26,37);
+                color:white;
+                font-size:22px;
+                height:34px;
+            }
+            #welcome fieldset{
+                border-top:3px solid rgb(7, 26, 37);
+                border-left:3px solid rgb(7, 26, 37);
+                border-right:3px solid rgb(7, 26, 37);
+                border-bottom:3px solid rgb(255, 21, 0) ;
+                background-color:lightblue;
+                position:relative;
+                width:1300px;
+            }
+            
+            #foot{
+                float:center;
+                
+                
+            }
+            #footfield{
+                background-color: rgb(7,26,37);
+            }
+            
+            #details{
+                color:white;
+               
+            }
+            
+            .dropbtn {
+                color: white;
+                background-color: rgb(7,26,37);
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                font-family: inherit;
+}
+
+            .dropbtn:hover, .dropbtn:focus {
+                  background-color: #3e8e41;
+            }
+
+            .dropdown {
+ 
+                     display: inline-block;
+            }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color:whitesmoke;
+  background-color: rgb(7, 26, 37);
+  max-width: 160px;
+  padding:10px 5px 10px 5px;
+ 
+  overflow: auto;
+  word-spacing:8px;
+  border-left:3px solid rgb(255, 21, 0) ;
+  border-right:3px solid rgb(255, 21, 0) ;
+  border-bottom:3px solid rgb(255, 21, 0) ;
+ 
+  
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:rgb(7, 26, 37);
+  height:20px;
+  
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+            
+        </style>
+    </head>
+    <body>
+        <div class = "head">
+            <header>
+            
+                <section class="header">
+
+                    <div class="hostel">
+                        <h1>Unleash the champ in you</h1>
+                        <p>Sports for all round development and stress busting</p>
+                    </div>
+            
+                </section>
+            
+            
+            <nav id="navbar">
+                <nav id="inner">
+                <a href='home.html'>Home</a>
+                <a href='#'>Academics</a>
+                <a href='#'>Departments</a>
+                <a href='Faculty.html'>Faculty</a>
+                <div class="dropdown">
+                    <button onclick="mFunction()" class="dropbtn">Training And Placement</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Placement_team_15.07.2020 28082020.pdf">Placement Team</a>
+                                
+                                <a href="Website Update _ Invitation.16.07.2020 (2).pdf">Invitation</a>
+                                
+                                <a href="Training & Placement Brochure 2020_21 18082020_compressed 18082020.pdf">TNP Brochure</a>
+                                
+                                <a href="Major Recruiters 25022021.pdf">Major Recruiters</a>
+                                
+                                <a href="Placement Stats Academic Session 2019-20 22102020.pdf">Placement Statistics Recent</a>
+                                
+                                <a href="PLACEMENT_PROTOCOL_1.pdf">Placement Protocol</a>
+                                
+                                <a href="T&P_Cell_Guidelines.pdf">General Instruction</a>
+                                
+                                <a href="Reach Us.pdf">Reach Us</a>
+                                
+                    </div>
+                  </div>
+                  
+                <a href='#'>Hostel</a>
+                <a href="Sports.html">Sports</a>
+            </nav>
+            </nav>
+            <hr>
+        </header>
+            
+               
+            
+        </div>
+        <section class="for-bgcolor">
+
+            <section class="about-hostel">
+    
+            <!--    <h1>OUR HOSTELS</h1> -->
+                <p>The engineering Curriculum requires dedicated and sustained efforts from every student.  As a result, 
+                    students remain busy with studies throughout the year. Nevertheless,  realizing the importance 
+                    of sorts and game in the overall development of the  students, sport facilities are provided to 
+                    students to the maximum possible  extent. The Institute lays adequate emphasis on student’s 
+                    participation in  various outdoor and indoor games and track and field sports.
+                </p>
+            </section>
+    
+    
+            <!-- girls hostel -->
+    
+            <section class="the-hostel">
+    
+                <h1>SPORTS FACILITIES</h1>
+                <p>The Institute provides specialised infrastructure and professional coaches to guide them in numerous sports. 
+                    It has specially designed courts for each sport such as a Standard 400 meter track, swimming pool, basketball 
+                    courts, cricket ground, football ground, tennis courts, Badminton court, kabaddi courts, volleyball court,  
+                    indoor sports facilities for gymnastics, table tennis, chess and more. The institute has professional coaches 
+                    who help to not only improve the physical aspect of the sport but also the mental side of things.</p>
+    
+                    <div class="hostel-name">
+    
+                        <div class="name">
+    
+                            <div class="gallery">
+    
+                                <a target="_blank" href="400m-track.png">
+                                <img src="400m-track.png" alt="Cinque Terre" width="300" height="100">
+                                </a>
+                                <div class="desc">Standard track</div>
+    
+                            </div>
+                            
+                            <div class="gallery">
+                                <a target="_blank" href="basketball.png">
+                                <img src="basketball.png" alt="Northern Lights" width="300" height="200">
+                                </a>
+                                <div class="desc">Basketball court</div>
+    
+                            </div>
+                            
+                            <div class="gallery">
+                                <a target="_blank" href="chess.png">
+                                <img src="chess.png" alt="Mountains" width="300" height="200">
+                                </a>
+                                <div class="desc">Chess championships</div>
+    
+                            </div>
+     
+                            <div class="gallery">
+                                <a target="_blank" href="discuss-throw.png">
+                                <img src="discuss-throw.png" alt="Mountains" width="300" height="200">
+                                </a>
+                                <div class="desc">Athletics ground</div>
+    
+                            </div> 
+    
+                        </div>
+    
+                    </div>
+    
+    
+                    <h1>SWIMMING POOL</h1>
+                    <p>NIT Kurukshetra now has a Swimming Pool of International Standards, 50 Mts. x 25 Mts. Size, with 90 Cm. 
+                        depth at shallow end and 5 Mts. depth at deeper end. Apart from this it is equipped with Three Spring 
+                        Boards for Diving   at 3 Mts., 5 Mts. and 7 Mts height simultaneously. It is provided with Anti-wave 
+                        Lane markers to conduct competitions with Portable Take off Boards with Fiber of Olympic type where 60 
+                        to 70 people can be accommodated at a time.</p>
+    
+                    
+                    <div class="hostel-name-pool">
+    
+                        <div class="name-pool">
+    
+                            <div class="gallery-pool">
+                                <a target="_blank" href="pool.jpg">
+                                <img src="pool.jpg" alt="Mountains" width="600" height="400">
+                                </a>
+                                <div class="desc">Swimming pool</div>
+    
+                            </div> 
+    
+                        </div>
+    
+                    </div>
+                
+            </section>
+    
+    
+            <!-- pool membership -->
+    
+            <section class="hostel-link">
+    
+                <div> <a href="https://nitkkr.ac.in/docs/Membership_Application_Students-22-2017.pdf" target="_blank"> <button class="btn">Pool Membership</button></a> </div>
+    
+            </section>
+    
+        
+        <div id="footer">
+            <fieldset id="footfield">
+            
+            <legend align="center" id="footleg"><div id="foot">
+                <div id="address">
+                    <img src="https://image.flaticon.com/icons/png/512/67/67872.png" width="40px" height="40px">
+                    <h1>Address</h1>
+                    <p>National Institute of Technology<br>
+                        Kurukshetra-136119<br>
+                        Haryana, INDIA
+                    </p>
+                    
+                </div>
+                <div id="number">
+                    <img src="https://i.pinimg.com/originals/ab/8e/8d/ab8e8d3f8aab71818795ce2db4891c64.png" width="40px" height="40px">
+                    </img>
+                    <h1>Phone number</h1>
+                    <p>01744-233208<br>
+                        01744-233227
+                    </p>
+                </div>
+                <div id="mail">
+                    <img src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-512.png" width="40px" height="40px">
+                    </img>
+                    <h1>Email Address</h1>
+                    <p>registrar@nitkkr.ac.in<br>
+                        academic@nitkkr.ac.in
+                    </p>
+                </div>
+               
+            </div></legend>
+            <div id="sociali">
+                <a href="https://twitter.com/nitkurukshetra"><img class="social" src="https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-logo-2012.png"></img>
+                </a>
+                
+                <a href="https://www.facebook.com/nitkurukshetraofficialpage/"><img class="social" src="https://www.facebook.com/images/fb_icon_325x325.png"></img>
+                 </a>                 
+                <a href="https://www.instagram.com/nitkurukshetra/?hl=en"><img class="social" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"></img>
+                 </a>
+            </div>
+            <div id="details">
+                <h2 align="center">Copyright © 2016 All Rights Reserved. NIT Kurukshetra | Designed and developed by Tushar</h2>
+            </div>
+        </fieldset>
+        
+            
+           
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function mFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+            </script>
+
+            
+    </body>
+</html>

@@ -1,0 +1,395 @@
+<html>
+  <head>
+    <style>
+      #navbar {
+        word-spacing: 20px;
+        font-size: 20px;
+      }
+      #logo {
+        background-color: white;
+        width: 130px;
+        float: right;
+        position: relative;
+        right: 22px;
+        top: 20px;
+      }
+      #TAP {
+        word-spacing: 2px;
+      }
+      #navbar a {
+        text-decoration: none;
+        color: rgb(253, 252, 252);
+      }
+      #inner {
+        text-align: center;
+      }
+
+      #navbar a:hover {
+        text-decoration: underline;
+        background-color: #ddd;
+        color: black;
+      }
+      h1 {
+        text-align: center;
+        float: center;
+      }
+      #navbar a:active {
+        background-color: #04aa6d;
+        color: white;
+      }
+      header {
+        background-color: rgb(7, 26, 37);
+        color: rgb(250, 249, 249);
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        background-color: rgb(7, 26, 37);
+      }
+      #navbar {
+        clear: left;
+        height: 25px;
+      }
+      .dropbtn {
+        color: white;
+        background-color: rgb(7, 26, 37);
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #3e8e41;
+      }
+
+      .dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        color: whitesmoke;
+        background-color: rgb(7, 26, 37);
+        max-width: 160px;
+        padding: 10px 5px 10px 5px;
+
+        overflow: auto;
+        word-spacing: 8px;
+        border-left: 3px solid rgb(255, 21, 0);
+        border-right: 3px solid rgb(255, 21, 0);
+        border-bottom: 3px solid rgb(255, 21, 0);
+
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: rgb(7, 26, 37);
+        height: 20px;
+
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+      #director img{
+         margin:30px 30px 10px 30px;
+         
+      }
+      #director div,#computers div{
+        float:left;
+        text-align: center;
+      }
+    #computers div{
+        width:30%;
+    }
+      #director fieldset,#computers fieldset{
+          width:1290px;
+          border-top:3px solid rgb(7, 26, 37);
+          border-right:3px solid  rgb(7, 26, 37);
+          border-bottom:3px solid  rgb(255, 21, 0);
+          border-left:3px solid  rgb(7, 26, 37);
+          margin-bottom: 20px;
+      }
+      #director p,#computers p{
+          font-size: 20px;
+      }
+      .social{
+                width:50px;
+                height:50px;
+            }
+            hr{
+                border-top: 2px solid rgb(255, 21, 0);
+            }
+            #sociali{
+                float:left;
+                margin:20px 8px 8px 20px;
+            }
+            #address,#number,#mail{
+                float:left;
+                margin-right:30px;
+                border:3px solid black;
+                width:210px;
+                height:230px;
+                background-color: lightblue;
+                color:black;
+            }
+            #foot{
+                float:center;
+                
+                
+            }
+            #footfield{
+                background-color: rgb(7,26,37);
+                width: 1320px;
+            }
+            
+            #details{
+                color:white;
+               
+            }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/7/75/National_Institute_of_Technology%2C_Kurukshetra_Logo.png/220px-National_Institute_of_Technology%2C_Kurukshetra_Logo.png"
+      />
+      <img />
+
+      <h1>National Institute Of Technology Kurukshetra</h1>
+
+      <nav id="navbar">
+        <nav id="inner">
+          <a href="home.html">Home</a>
+          <a href="#">Academics</a>
+          <a href="#">Departments</a>
+          <a href="#">Faculty</a>
+          <div class="dropdown">
+            <button onclick="mFunction()" class="dropbtn">
+              Training And Placement
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Placement_team_15.07.2020 28082020.pdf"
+                >Placement Team</a
+              >
+                             
+              <a href="Website Update _ Invitation.16.07.2020 (2).pdf"
+                >Invitation</a
+              >
+                             
+              <a
+                href="Training & Placement Brochure 2020_21 18082020_compressed 18082020.pdf"
+                >TNP Brochure</a
+              >
+                             
+              <a href="Major Recruiters 25022021.pdf">Major Recruiters</a>      
+                       
+              <a href="Placement Stats Academic Session 2019-20 22102020.pdf"
+                >Placement Statistics Recent</a
+              >
+                             
+              <a href="PLACEMENT_PROTOCOL_1.pdf">Placement Protocol</a>        
+                     
+              <a href="T&P_Cell_Guidelines.pdf">General Instruction</a>        
+                      <a href="Reach Us.pdf">Reach Us</a>
+                     
+            </div>
+          </div>
+
+          <a href="#">Hostel</a>
+          <a href="sportstry.html">Sports</a>
+        </nav>
+      </nav>
+      <hr />
+    </header>
+    <div id="director">
+        <fieldset>
+            <legend align="center">
+        <h1>Our Director</h1>
+    </legend>
+    <div>
+        <img src="1 Director Sir .jpg" align="left" width="300px"></img>
+        <figcaption align="center">Dr Satish Kumar<br>Director at NIT KKR</figcaption>
+    </div>
+        <p>Dr. Satish Kumar is a distinguished aerospace Scientist of national repute with outstanding contribution to the missiles and strategic systems.  He has unique distinction of leading important strategic establishments over a decade and laying the foundation for futuristic technological growth in critical areas.  A graduate in Aeronautical Engineering from Punjab Engineering College, Chandigarh, he obtained Masters degree in Aerospace from IIT, Kanpur and Doctorate in Mechanical Engineering from REC, Warangal.</p>
+        <p>He played a key role in the development of first ever indigenously developed Liquid propellant (LP) rocket engine for Prithvi missile.  He was instrumental in productionization of highly complex LP engines at Hindustan Aeronautics Limited (HAL) and private industry.  His contribution in development of Cold and Hot gas Reaction Control systems led to better control of missile systems at higher altitudes, thus increasing the accuracy of the missiles.  He played a vital role in the development of Propellant transfer systems and Storage facilities at various forward Army locations.  His dynamic leadership played a key role in providing training to Army personnel and support Induction process for Prithvi missile into the Armed Forces arsenal.</p>
+    </fieldset>
+    </div>
+    <div id="computers">
+        <fieldset>
+            <legend align="center">
+        <h1 align="center" style="font-family:'Courier New', Courier, monospace;">
+            Computer Engineering Department
+        </h1></legend>
+        <p>The department started offering B.Tech. Programme in Computer Engineering in 1987 with initial intake of 30 students and subsequently raised to 92. Department also started B.Tech programme in Information Technology (IT) in 2006 with present intake of 92 students. The department is proud to have a record of almost 100% placement for last 10 years. The department also offers two M.Tech. programs, one in Computer Engineering and other in Cyber Security. Department started Ph.D. program in 2002. So far 44 Ph.D.s have been awarded and 28 PhDs are in progress. Currently there are five sponsored projects undergoing in the department.</p>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/1494585987Photo%20MD%202016.jpg" height="200px"></img>
+            <figcaption>
+                Mayank Dave(HOD)<br>Ph.D (2002, IIT Roorkee), Senior Member IEEE<br>mdave@nitkkr.ac.in m.dave@ieee.org
+            </figcaption>
+        </div>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/1510551751rka.jpg" height="200px"></img>
+            <figcaption>
+                Rajesh Kumar Aggarwal<br>PhD(NIT Kurukshetra), 2014<br>rka15969@gmail.com
+            </figcaption>
+        </div>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/vijay_verma.jpg" height="200px"></img>
+            <figcaption>
+                Vijay Verma<br>Ph.D.(NIT Kurukshetra) , M.Tech. (IIT Roorkee), B.Tech. (BIET Jhansi)<br>vermavijay1986@gmail.com
+            </figcaption>
+        </div>
+    </fieldset>
+    </div>
+    <div id="computers">
+        <fieldset>
+            <legend align="center">
+        <h1 align="center" style="font-family:'Courier New', Courier, monospace;">
+            Civil Enginnering Department
+        </h1></legend>
+        <p>The Department of Civil Engineering of National Institute of Technology, Kurukshetra (Formerly Regional Engineering College, Haryana) started functioning from the year 1963, when the first batch of students were admitted to the five year B.Sc. Engineering Degree Course. In 1966, M.Sc. Engineering Degree Courses in the specializations of Structural Engineering and Constructional Techniques; and Soil Mechanics and Foundation Engineering were started. The first registration for the degree of Doctor of Philosophy in Civil Engineering was done in 1967. </p>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/krisna.jpg" height="200px"></img>
+            <figcaption>
+                Krishna Kumar Singh (HOD)<br>PhD, 1998, KUK<br>k_k_singh_2000@yahoo.com
+
+            </figcaption>
+        </div>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/1592564425SNS%20Photo.jpg" height="200px"></img>
+            <figcaption>
+                S. N. Sachdeva<br>Ph.D.(Civil), M.E. (Highways)-Distinction<br>snsachdeva@yahoo.co.in 
+            </figcaption>
+        </div>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/1495035999HKSHARMA%20Photo1.jpg" height="200px"></img>
+            <figcaption>
+                Hari Krishan Sharma<br>Ph.D(Structural Engg.), M.Sc. Engg. (Civil), B.Sc. Engg.(Civil)<br>hksharma1010@yahoo.co.in
+            </figcaption>
+        </div>
+    </fieldset>
+    </div>
+    <div id="computers">
+        <fieldset>
+            <legend align="center">
+        <h1 align="center" style="font-family:'Courier New', Courier, monospace;">
+            Mechanical Enginnering Department
+        </h1></legend>
+        <p>The Department of Mechanical Engineering started its illustrious journey in 1963. It can boast of one of the most talented faculty among the engineering institutes. There are various research and development projects in Mechanical Engineering that are strongly supported by the institute. Since the inception of the department, it has been the source of attraction for meritorious UG, PG and PhD students. The departmental labs are equipped with a wide range of machines, tools and equipment to broaden the practical knowledge of students. It also incorporates labs to carry out design, simulation and development on latest computer systems. The department lays strong emphasis on helping students acquire practical knowledge. It has played a key role in motivating and assisting the students to freely explore the departmental resources and carry out academic activities. </p>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/1587903948Dinesh.jpg" height="200px"></img>
+            <figcaption>
+                Dinesh Khanduja<br>Ph D (2003), NIT, Kurukshetra University, Kurukshetra<br>dineshkhanduja@yahoo.com
+
+            </figcaption>
+        </div>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/1494659176Scan1.JPG" height="200px"></img>
+            <figcaption>
+                Dixit Garg<br>Ph.D., 1997 REC Kurukshetra<br>dixitgarg@yahoo.co.in
+            </figcaption>
+        </div>
+        <div style="border-right:3px solid rgb(7, 26, 37);">
+            <img src="https://nitkkr.ac.in/admin/member_images/1512636615Untitled.png" height="200px"></img>
+            <figcaption>
+                Surjit Angra<br>B.Sc(Engg.) Mech., M.Tech, Ph.D (Mech. Engg.)<br>angrasurjit@yahoo.com
+            </figcaption>
+        </div>
+    </fieldset>
+    </div>
+    <div id="footer">
+        <fieldset id="footfield">
+        
+        <legend align="center" id="footleg"><div id="foot">
+            <div id="address">
+                <img src="https://image.flaticon.com/icons/png/512/67/67872.png" width="40px" height="40px">
+                <h1>Address</h1>
+                <p>National Institute of Technology<br>
+                    Kurukshetra-136119<br>
+                    Haryana, INDIA
+                </p>
+                
+            </div>
+            <div id="number">
+                <img src="https://i.pinimg.com/originals/ab/8e/8d/ab8e8d3f8aab71818795ce2db4891c64.png" width="40px" height="40px">
+                </img>
+                <h1>Phone number</h1>
+                <p>01744-233208<br>
+                    01744-233227
+                </p>
+            </div>
+            <div id="mail">
+                <img src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-512.png" width="40px" height="40px">
+                </img>
+                <h1>Email Address</h1>
+                <p>registrar@nitkkr.ac.in<br>
+                    academic@nitkkr.ac.in
+                </p>
+            </div>
+           
+        </div></legend>
+        <div id="sociali">
+            <a href="https://twitter.com/nitkurukshetra"><img class="social" src="https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-logo-2012.png"></img>
+            </a>
+            
+            <a href="https://www.facebook.com/nitkurukshetraofficialpage/"><img class="social" src="https://www.facebook.com/images/fb_icon_325x325.png"></img>
+             </a>                 
+            <a href="https://www.instagram.com/nitkurukshetra/?hl=en"><img class="social" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"></img>
+             </a>
+        </div>
+        <div id="details">
+            <h2 align="center">Copyright © 2016 All Rights Reserved. NIT Kurukshetra | Designed and developed by Tushar</h2>
+        </div>
+    </fieldset>
+    </div>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function mFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
